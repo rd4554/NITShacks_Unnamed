@@ -58,6 +58,15 @@ function Cardrow() {
     )
 }
 
+function BarSection(){
+
+    return(
+        <>
+            <BarGraph className="w-[60%] mx-auto mt-10 mb-[3rem]"/>
+        </>
+    )
+}
+
 function Home() {
 
   return (
@@ -79,22 +88,30 @@ function Home() {
             
             <section id="tasks" className=" overflow-hidden bg-[#2B7150]">
                 <div
-                    className=" mt-14 "
+                    className=" mt-14 pt-10"
                     style={{ background: 'linear-gradient(245.04deg, #62F35E 0.77%, #387436 99.23%)'}}>
                         <Heading head="Tasks"/>
                         <TaskBody />
-                    </div>
-            </section>
-            
-            
-            <section id="outdoor" className=" overflow-hidden bg-[#2B7150]">
-                <div className=" "
-                    style={{ background: 'linear-gradient(245.04deg, #62F35E 0.77%, #387436 99.23%)'}}>
-                         <Heading head="Outdoor Challenge"/>
-                         <TaskBody />
-                    </div>            
+                </div>
             </section>
 
+            <section id="tasks" className=" overflow-hidden bg-[#2B7150]">
+                <div
+                    className=" mt-14 pt-10"
+                    style={{ background: 'linear-gradient(245.04deg, #62F35E 0.77%, #387436 99.23%)'}}>
+                        <Heading head="Outdoor Challenges"/>
+                        <TaskBody />
+                </div>
+            </section>
+
+            <section id="outdoor" className=" overflow-hidden bg-[#2B7150]">
+                <div className="overflow-hidden pt-10"
+                    style={{ background: 'linear-gradient(245.04deg, #62F35E 0.77%, #387436 99.23%)'}}>
+                        <Heading head="Progress Bar" />
+                        <BarSection /> 
+                </div>            
+            </section>
+            
         </div>
     </>
   )

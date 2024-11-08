@@ -5,7 +5,7 @@ import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, Title, Toolti
 
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
 
-const ChartComponent = () => {
+const ChartComponent = ({className}) => {
   const data = {
     labels: ['Day 1', 'Day 2', 'Day 3', 'Day 4'],
     datasets: [
@@ -60,7 +60,7 @@ const ChartComponent = () => {
   };
 
   return (
-    <div className="p-8 bg-green-800 rounded-lg shadow-lg">
+    <div className={`p-8 bg-green-800 rounded-lg shadow-lg ${className}`}>
       <Bar data={data} options={options} />
     </div>
   );
