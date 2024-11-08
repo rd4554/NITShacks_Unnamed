@@ -1,5 +1,11 @@
-
+// src/pages/Home.jsx
 import React from 'react';
+import GreenWheelMeter from '../../components/greenwheel';
+import WeeklyScore from '../../components/weeklyscore';
+import LoadingBar from '../../components/progressbar';
+import Taskbox from '../../components/taskbox';
+import VerticalBoxes from '../../components/tasks';
+import GreenWheelLogo from '../../components/greenwheellogo';
 function Home() {
   return (
     <>
@@ -30,7 +36,8 @@ function Home() {
         </div>
     </>
   )
+    
+
 }
 
 export default Home;
-
