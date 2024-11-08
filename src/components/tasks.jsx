@@ -1,8 +1,8 @@
 import React from 'react';
 
-function VerticalBoxes() {
+function VerticalBoxes({className}) {
   return (
-    <div className="flex items-center justify-center h-screen">
+    <div className={`flex items-center justify-center h-screen ${className}`}>
       {/* Main Container */}
       <div
         className="w-60 h-[400px] flex flex-col items-center justify-around rounded-md p-4"

@@ -1,13 +1,13 @@
 // src/components/CookingComponent.jsx
 import React from 'react';
 
-function Taskbox() {
+function Taskbox({className}) {
     return (
         <div
-          className="flex flex-col items-start justify-center p-6 text-white rounded-lg"
+          className={`flex flex-col items-start justify-center p-6 text-white rounded-lg ${className}`}
           style={{ 
             backgroundColor: '#183717', 
-            width: '20rem', // Set width in rem
+            width: '40rem', // Set width in rem
             height: '25rem' // Set height in rem
           }}
         >
