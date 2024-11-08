@@ -59,36 +59,8 @@ function Cardrow() {
 }
 
 function Home() {
-  const data = [
-    { label: 'Jan', value: 100 },
-    { label: 'Feb', value: 20 },
-    { label: 'Mar', value: 50 },
-    { label: 'Apr', value: 80 },
-    { label: 'May', value: 60 },
-    { label: 'Jun', value: 90 },
-  ];
 
   return (
-    <div className="text-gray-800">
-      {/* Center the components with some space */}
-      <div className="flex justify-center items-center flex-col space-y-8 py-20">
-        {/* Green Wheel Meter with 75% progress */}
-        <GreenWheelMeter /> 
-        <WeeklyScore />
-        <LoadingBar />
-        <Taskbox />
-        <VerticalBoxes />
-        <GreenWheelLogo />
-
-        {/* Bar Graph Component */}
-        <div className="w-full max-w-lg mt-8">
-          <BarGraph data={data} />
-        </div>
-
-        {/* Weekly Score showing 4/16 */}
-      </div>
-    </div>
-  );
     <>
       <div className="overflow-hidden ">
 
