@@ -7,13 +7,25 @@ import Taskbox from '../../components/taskbox';
 import VerticalBoxes from '../../components/tasks';
 import GreenWheelLogo from '../../components/greenwheellogo';
 
+function TaskBody(){
+
+    return(
+        <>
+            <div className="taskbody flex justify-center gap-10 mt-10">
+                <VerticalBoxes className="mt-[-8rem]"/>
+                <Taskbox className="mt-[1rem]"/>
+            </div>
+        </>
+    )
+}
+
 function Heading({head}){
 
     return(
         <>
             <div className="headcontainer flex justify-between items-center">
-                <GreenWheelLogo />
-                <h1 className='headingmain text-5xl mr-[5rem] font-bold' style={{ fontFamily: 'Inconsolata, monospace' }}>{head}</h1>
+                <GreenWheelLogo className="ml-[18rem]"/>
+                <h1 className='headingmain text-5xl mr-[20rem] font-bold' style={{ fontFamily: 'Inconsolata, monospace' }}>{head}</h1>
             </div>
         </>
     )
@@ -66,14 +78,16 @@ function Home() {
                     className=" mt-14 "
                     style={{ background: 'linear-gradient(245.04deg, #62F35E 0.77%, #387436 99.23%)'}}>
                         <Heading head="Tasks"/>
+                        <TaskBody />
                     </div>
             </section>
             
             
             <section id="outdoor" className=" overflow-hidden bg-[#2B7150]">
-                <div className="mt-14 "
+                <div className=" "
                     style={{ background: 'linear-gradient(245.04deg, #62F35E 0.77%, #387436 99.23%)'}}>
-
+                         <Heading head="Outdoor Challenge"/>
+                         <TaskBody />
                     </div>            
             </section>
 
