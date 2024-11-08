@@ -2,6 +2,7 @@
 import React from 'react';
 import GreenWheelMeter from '../../components/greenwheel';
 import WeeklyScore from '../../components/weeklyscore';
+import VerticalBoxes from '../../components/tasks';
 function Home() {
   return (
     <div className="text-gray-800">
@@ -10,6 +11,7 @@ function Home() {
         {/* Green Wheel Meter with 75% progress */}
         <GreenWheelMeter/> 
         <WeeklyScore/>
+        <VerticalBoxes/>
         {/* Weekly Score showing 4/16 */}
       </div>
     </div>
